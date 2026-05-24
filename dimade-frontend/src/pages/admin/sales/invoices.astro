@@ -1,0 +1,8 @@
+---
+import AdminLayout from "../../../layouts/AdminLayout.astro";
+import DocumentList from "../../../components/admin/DocumentList";
+---
+
+<AdminLayout title="Facturas y Boletas">
+    <DocumentList type="invoice" title="Facturas y Boletas" client:only="react" />
+</AdminLayout>

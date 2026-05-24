@@ -1,0 +1,8 @@
+---
+import AdminLayout from "../../../layouts/AdminLayout.astro";
+import SupplierManagement from "../../../components/admin/SupplierManagement";
+---
+
+<AdminLayout title="Gestión de Proveedores">
+    <SupplierManagement client:only="react" />
+</AdminLayout>

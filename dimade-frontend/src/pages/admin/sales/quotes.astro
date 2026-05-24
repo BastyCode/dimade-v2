@@ -1,0 +1,8 @@
+---
+import AdminLayout from "../../../layouts/AdminLayout.astro";
+import DocumentList from "../../../components/admin/DocumentList";
+---
+
+<AdminLayout title="Cotizaciones">
+    <DocumentList type="quote" title="Cotizaciones" client:only="react" />
+</AdminLayout>

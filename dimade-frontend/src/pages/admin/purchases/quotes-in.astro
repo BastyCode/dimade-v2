@@ -1,0 +1,8 @@
+---
+import AdminLayout from "../../../layouts/AdminLayout.astro";
+import SupplierQuoteManagement from "../../../components/admin/SupplierQuoteManagement";
+---
+
+<AdminLayout title="Cotizaciones Proveedores">
+    <SupplierQuoteManagement client:only="react" />
+</AdminLayout>

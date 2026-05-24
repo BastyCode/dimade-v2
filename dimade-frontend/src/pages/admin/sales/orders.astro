@@ -1,0 +1,8 @@
+---
+import AdminLayout from "../../../layouts/AdminLayout.astro";
+import DocumentList from "../../../components/admin/DocumentList";
+---
+
+<AdminLayout title="Órdenes de Venta">
+    <DocumentList type="order" title="Órdenes de Venta" client:only="react" />
+</AdminLayout>
