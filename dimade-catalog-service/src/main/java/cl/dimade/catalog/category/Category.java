@@ -18,13 +18,19 @@ public class Category {
     
     private String slug;
 
+    private boolean featured = false;
+
+    private String imageUrl;
+
     public Category() {}
 
-    public Category(Long id, String name, String description, String slug) {
+    public Category(Long id, String name, String description, String slug, boolean featured, String imageUrl) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.slug = slug;
+        this.featured = featured;
+        this.imageUrl = imageUrl;
     }
 
     // Getters and Setters
@@ -39,6 +45,12 @@ public class Category {
 
     public String getSlug() { return slug; }
     public void setSlug(String slug) { this.slug = slug; }
+
+    public boolean isFeatured() { return featured; }
+    public void setFeatured(boolean featured) { this.featured = featured; }
+
+    public String getImageUrl() { return imageUrl; }
+    public void setImageUrl(String imageUrl) { this.imageUrl = imageUrl; }
 
     @Override
     public boolean equals(Object o) {

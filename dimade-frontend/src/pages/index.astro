@@ -2,6 +2,7 @@
 // Importamos los estilos globales y los componentes necesarios
 import "@/styles/global.css";
 import { MoveRight, Building2, HardHat, Laptop, ClipboardCheck, ArrowUpRight } from "lucide-react";
+import InteractiveBento from "@/components/ui/InteractiveBento";
 ---
 
 <html lang="es">
@@ -74,74 +75,9 @@ import { MoveRight, Building2, HardHat, Laptop, ClipboardCheck, ArrowUpRight } f
 				</div>
 			</section>
 
-			<!-- 3. SECCIÓN BENTO GRID (CATEGORÍAS ESTILO APPLE) -->
+			<!-- 3. SECCIÓN BENTO GRID (CATEGORÍAS INTERACTIVAS) -->
 			<section id="categorias" class="max-w-7xl mx-auto px-6 py-12">
-				<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-auto md:h-[600px]">
-					
-					<!-- Bloque 1: Ferretería (Grande) -->
-					<div class="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-[2rem] bg-slate-100">
-						<img 
-							src="https://images.unsplash.com/photo-1581244276891-83393a6b24f1?auto=format&fit=crop&q=80&w=800" 
-							alt="Ferretería Industrial" 
-							class="absolute inset-0 w-full h-full object-cover mix-blend-multiply opacity-80 group-hover:scale-105 transition-transform duration-700"
-						/>
-						<div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent"></div>
-						<div class="absolute bottom-8 left-8 text-white">
-							<Building2 class="w-8 h-8 mb-4 text-primary" />
-							<h3 class="text-2xl font-bold mb-2">Ferretería & Construcción</h3>
-							<p class="text-slate-200 text-sm max-w-xs">Herramientas, materiales y maquinaria para proyectos de gran escala.</p>
-						</div>
-						<div class="absolute top-8 right-8">
-							<div class="bg-white/20 backdrop-blur-md p-3 rounded-full text-white">
-								<ArrowUpRight class="w-5 h-5" />
-							</div>
-						</div>
-					</div>
-
-					<!-- Bloque 2: Oficina (Alargado) -->
-					<div class="md:col-span-2 md:row-span-1 relative group overflow-hidden rounded-[2rem] bg-slate-200">
-						<img 
-							src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800" 
-							alt="Insumos Oficina" 
-							class="absolute inset-0 w-full h-full object-cover mix-blend-overlay group-hover:scale-105 transition-transform duration-700"
-						/>
-						<div class="absolute inset-0 bg-slate-900/20 group-hover:bg-slate-900/10 transition-colors"></div>
-						<div class="absolute inset-0 flex items-center justify-between px-8">
-							<div>
-								<h3 class="text-xl font-bold text-white mb-1">Equipamiento Oficina</h3>
-								<p class="text-white/80 text-xs">Mobiliario, papelería y suministros diarios.</p>
-							</div>
-							<div class="bg-white p-3 rounded-2xl shadow-xl">
-								<Laptop class="w-6 h-6 text-primary" />
-							</div>
-						</div>
-					</div>
-
-					<!-- Bloque 3: Seguridad (Cuadrado) -->
-					<div class="md:col-span-1 md:row-span-1 relative group overflow-hidden rounded-[2rem] bg-primary">
-						<div class="absolute inset-0 p-8 flex flex-col justify-between text-white">
-							<HardHat class="w-10 h-10" />
-							<div>
-								<h3 class="text-lg font-bold leading-tight">Seguridad Industrial</h3>
-								<p class="text-white/70 text-[10px] mt-2 uppercase tracking-widest font-black">Protección certificada</p>
-							</div>
-						</div>
-					</div>
-
-					<!-- Bloque 4: Otros (Cuadrado) -->
-					<div class="md:col-span-1 md:row-span-1 relative group overflow-hidden rounded-[2rem] border border-slate-200 bg-white">
-						<div class="absolute inset-0 p-8 flex flex-col justify-between">
-							<div class="h-12 w-12 bg-slate-50 rounded-2xl flex items-center justify-center border border-slate-100">
-								<ClipboardCheck class="w-6 h-6 text-slate-400" />
-							</div>
-							<div>
-								<h3 class="text-lg font-bold text-slate-800">Servicios Especiales</h3>
-								<p class="text-slate-400 text-xs mt-1">Gestión de compras a medida.</p>
-							</div>
-						</div>
-					</div>
-
-				</div>
+				<InteractiveBento client:load />
 			</section>
 
 			<!-- 4. SECCIÓN DE CONFIANZA -->
